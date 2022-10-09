@@ -29,13 +29,15 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
+        if(!extraCheese){
         price+=80;
         extraCheese=true;
-
+        }
     }
 
     public void addExtraToppings(){
         // your code goes here
+        if(!extraToppings){
         if(isVeg){
             price+=70;
         }
@@ -43,12 +45,15 @@ public class Pizza {
             price+=120;
         }
         extraToppings=true;
+        }
     }
 
     public void addTakeaway(){
         // your code goes here
+        if(!takeAway){
         price+=20;
         takeAway=true;
+        }
     }
 
     public String getBill(){
